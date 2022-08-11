@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Student Information`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
   },
   plugins: [
     // ... some gatsby plugins
@@ -13,18 +15,18 @@ module.exports = {
 
     // Finally our plugin
     {
-        resolve: '@directus/gatsby-source-directus',
-        options: {
-            url: `https://a1aen8jt.directus.app/`, // Fill with your Directus instance address
-            auth: {
-                token: 'GbsvT8VxIV6K5ugZOY8EKvyEO-gJHIQ0', // You can use a static token from an user
+      resolve: '@directus/gatsby-source-directus',
+      options: {
+        url: `https://a1aen8jt.directus.app/`, // Fill with your Directus instance address
+        auth: {
+          token: 'GbsvT8VxIV6K5ugZOY8EKvyEO-gJHIQ0', // You can use a static token from an user
 
-                // Or you can use the credentials of an user
-                // email: "johndoe@directus.cloud",
-                // password: "mysecretpassword",
-            },
+          // Or you can use the credentials of an user
+          // email: "johndoe@directus.cloud",
+          // password: "mysecretpassword",
         },
+      },
     },
-],
+  ],
 
 }
