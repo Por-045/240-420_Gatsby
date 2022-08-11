@@ -1,3 +1,5 @@
+
+import Layout from "../components/layout"
 import * as React from "react"
 import { graphql } from "gatsby"
 
@@ -6,15 +8,25 @@ export default function Home({ data }) {
   // const {student_id, first_name, last_name} = data.member
   const projects = data.directus.member
 
-  return (
-    <div>
-      <h1>Test</h1>
-      <div>
-        {projects.map(project => (
-          <h3>{project.student_id + ' ' + project.first_name + ' ' + project.last_name}</h3>
-        ))}
-      </div>
-    </div>
+  return (<Layout><h1>240-420</h1><table>
+
+    <tr><td><center>ID</center></td><td><center>NAME</center></td><td><center>INFOMATION</center></td></tr>
+    {projects.map(project => (
+      <tr>
+        <td>
+          <center>{project.student_id} </center>
+        </td>
+        <td>
+          <center>{project.first_name + ' ' + project.last_name}</center>
+        </td>
+        <td>
+          <center> CLICK</center>
+        </td>
+      </tr>
+
+    ))}
+
+  </table></Layout>
   )
 }
 
