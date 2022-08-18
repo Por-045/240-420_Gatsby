@@ -2,7 +2,7 @@ import * as React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../../components/layout"
 
-export default function Por({ data }) {
+export default function Howl({ data }) {
   console.log(data.directus.member[0].enroll[0].subject_id)
 
   const {student_id, first_name, last_name, gender, age} = data.directus.member[0]
@@ -45,7 +45,7 @@ export default function Por({ data }) {
 export const query = graphql`
     {
       directus {
-        member(filter: {student_id: {_eq: "6210110045"}}) {
+        member(filter: {student_id: {_eq: "6210110446"}}) {
           student_id
           first_name
           last_name

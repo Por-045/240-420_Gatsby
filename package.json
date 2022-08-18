@@ -17,6 +17,9 @@
   "dependencies": {
     "@directus/gatsby-source-directus": "^9.14.1",
     "gatsby": "^4.20.0",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-sharp": "^4.21.0",
+    "gatsby-transformer-sharp": "^4.21.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   }

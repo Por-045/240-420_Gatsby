@@ -1,7 +1,7 @@
 
 import Layout from "../components/layout"
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 export default function Subject({ data }) {
   console.log(data)
@@ -23,7 +23,7 @@ export default function Subject({ data }) {
           <center>{project.section}</center>
         </td>
         <td>
-          <center> CLICK</center>
+          <center><Link to={'/subject/' + project.subject_id +'-' + project.section}>CLICK</Link></center>
         </td>
       </tr>
 

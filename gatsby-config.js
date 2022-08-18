@@ -5,6 +5,8 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+     `gatsby-plugin-sharp`,
     // ... some gatsby plugins
 
     // You can take advantage of the following plugins with gatsby-source-directus
