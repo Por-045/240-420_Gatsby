@@ -26,6 +26,16 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
+        <Link 
+          to="/subject"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+            marginLeft: 300,
+            fontSize: 30
+          }}
+        >
+             Subject</Link>
       </h1>
     </div>
   </header>
