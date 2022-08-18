@@ -1,10 +1,10 @@
 
 import Layout from "../components/layout"
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link} from "gatsby"
 
 export default function Home({ data }) {
-  console.log(data)
+  console.log(data.directus.member[0])
   // const {student_id, first_name, last_name} = data.member
   const projects = data.directus.member
 
@@ -20,7 +20,7 @@ export default function Home({ data }) {
           <center>{project.first_name + ' ' + project.last_name}</center>
         </td>
         <td>
-          <center> CLICK</center>
+          <center><Link to={"/members/" + project.student_id}> CLICK</Link></center>
         </td>
       </tr>
 
