@@ -36,7 +36,7 @@ export default function Subject({ data }) {
 export const query = graphql`
   {
     directus {
-      subject {
+      subject (sort: "subject_id"){
         subject_id
         subject_name
         section
