@@ -8,7 +8,7 @@ export default function Subject({ data }) {
   // const {student_id, first_name, last_name} = data.member
   const projects = data.directus.subject
 
-  return (<Layout><h1>240-420</h1><table>
+  return (<Layout><h1 style={{textAlign: `center`}}>Subject</h1><table>
 
     <tr><td><center>ID</center></td><td><center>NAME</center></td><td><center>SECTION</center></td><td><center>INFOMATION</center></td></tr>
     {projects.map(project => (
