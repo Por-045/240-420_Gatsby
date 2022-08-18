@@ -31,7 +31,7 @@ export default function Firen({ data }) {
                 <center>{subject.subject_id.subject_name}</center>
               </td>
               <td>
-                <center><Link to={'/subject/' + subject.subject_id.subject_id}>CLICK</Link></center>
+                <center><Link to={'/subject/' + subject.subject_id.subject_id +'-' + subject.subject_id.section}>CLICK</Link></center>
               </td>
             </tr>
           ))}
